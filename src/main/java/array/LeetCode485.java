@@ -18,7 +18,7 @@ public class LeetCode485 {
         System.out.println(findMaxConsecutiveOnes(a));
     }
 
-    // 一次遍历找出1的个数，并进行统计，遇到0就进行最大最的判断
+    // 一次遍历找出1的个数，并进行统计，遇到0就进行最大的判断
     public static int findMaxConsecutiveOnes(int[] nums) {
         if (nums.length == 0) {
             return 0;

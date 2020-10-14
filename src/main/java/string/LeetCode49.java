@@ -28,19 +28,22 @@ public class LeetCode49 {
         System.out.println(groupAnagrams(strs));
     }
 
-    // 同利用hash，两个hash表表示相应的
+    // 利用hash，字母异位词的特点是字母的个数是相同的
     public static List<List<String>> groupAnagrams(String[] strs) {
         List<List<String>> res = new ArrayList<>();
         if (strs.length == 0) {
             return res;
         }
+        // 保存字母的个数
         int[] a = new int[26];
         Map<String, List<String>> map = new HashMap<>();
         for (String str : strs) {
             Arrays.fill(a, 0);
+            // 保存字母的个数
             for (int i = 0; i < str.length(); i ++) {
                 a[str.charAt(i) - 'a'] ++;
             }
+            // 将单词转化为“字母+个数”的形式，这样字母异位词就会是同一种代号
             StringBuilder sb = new StringBuilder();
             for (int i = 0; i < 26; i ++) {
                 if (a[i] != 0) {

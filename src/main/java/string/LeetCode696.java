@@ -31,6 +31,11 @@ public class LeetCode696 {
         System.out.println(countBinarySubstrings("00110011"));
     }
 
+    /*
+    1、按照0和1的连续段分组，例如s=00111011，就可以得出count数组为{2,3,1,2}
+    2、假设counts 数组中两个相邻的数字为u或者v，它们对应着u个0和v个 11，或者u个1和v个0。它们能组成的满足条件的子串数目为min{u,v}
+    3、遍历所有的相邻的数对，求和即可
+     */
     public static int countBinarySubstrings(String s) {
         int i = 0, res = 0, temp = 0;
         while (i < s.length()) {

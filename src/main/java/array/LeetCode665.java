@@ -36,8 +36,6 @@ public class LeetCode665 {
                 }
                 if (nums[i + 1] < temp) {
                     nums[i + 1] = nums[i];
-                } else {
-                    nums[i] = temp;
                 }
             }
             temp = nums[i];
