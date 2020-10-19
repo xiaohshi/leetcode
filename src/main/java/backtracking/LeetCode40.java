@@ -46,12 +46,11 @@ public class LeetCode40 {
             return res;
         }
         Arrays.sort(candidates);
-        boolean[] visited = new boolean[candidates.length];
-        helper(res, new ArrayList<>(), candidates, visited, target, 0);
+        helper(res, new ArrayList<>(), candidates, target, 0);
         return res;
     }
 
-    private static void helper(List<List<Integer>> res, List<Integer> list, int[] candidates, boolean[] visited, int target, int start) {
+    private static void helper(List<List<Integer>> res, List<Integer> list, int[] candidates, int target, int start) {
         if (target <= 0) {
             if (target == 0) {
                 res.add(new ArrayList<>(list));
@@ -67,7 +66,7 @@ public class LeetCode40 {
                 continue;
             }
             list.add(candidates[i]);
-            helper(res, list, candidates, visited, target - candidates[i], i + 1);
+            helper(res, list, candidates, target - candidates[i], i + 1);
             list.remove(list.size() - 1);
         }
     }
