@@ -1,4 +1,4 @@
-package other;
+package offer;
 
 /*
 剑指 Offer 62. 圆圈中最后剩下的数字
