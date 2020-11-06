@@ -27,10 +27,16 @@ package dynamic;
 public class LeetCode62 {
 
     public static void main(String[] args) {
-        System.out.println(uniquePaths(7, 3));
+        int m = 4, n = 3;
+
+        System.out.println(uniquePaths(m, n));
+
+        int[][] grid = new int[m][n];
+        uniquePaths1(grid, m, n, 0, 0);
+        System.out.println(count);
     }
 
-    // 就是取对角的之和
+    // 就是取对角的之和，动态规划
     public static int uniquePaths(int m, int n) {
         int[][] res = new int[m][n];
         for (int i = 0; i < m; i ++) {
@@ -43,6 +49,21 @@ public class LeetCode62 {
             }
         }
         return res[m - 1][n - 1];
+    }
+
+    // 回溯法
+    private static int count = 0;
+    private static void uniquePaths1(int[][] grid, int m, int n, int i, int j) {
+        if (i >= m || j >= n || grid[i][j] == -1) {
+            return;
+        }
+        if (i == m - 1 && j == n - 1) {
+            count ++;
+        }
+        grid[i][j] = -1;
+        uniquePaths1(grid, m, n, i + 1, j);
+        uniquePaths1(grid, m, n, i, j + 1);
+        grid[i][j] = 0;
     }
 
 }

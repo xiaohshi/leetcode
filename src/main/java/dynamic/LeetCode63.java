@@ -32,9 +32,13 @@ public class LeetCode63 {
     public static void main(String[] args) {
         int[][] obstacleGrid = {
                 {0, 0, 0},
-                {1, 1, 1},
+                {0, 1, 1},
                 {0, 0, 0}
         };
+
+        uniquePathsWithObstacles3(obstacleGrid, 0, 0);
+        System.out.println(count);
+
         System.out.println(uniquePathsWithObstacles(obstacleGrid));
 
         System.out.println(uniquePathsWithObstacles2(obstacleGrid));
@@ -101,6 +105,20 @@ public class LeetCode63 {
             }
         }
         return obstacleGrid[m][n];
+    }
+
+    private static int count = 0;
+    private static void uniquePathsWithObstacles3(int[][] grid, int i, int j) {
+        if (i >= grid.length || j >= grid[0].length || grid[i][j] == 1 || grid[i][j] == -1) {
+            return;
+        }
+        if (i == grid.length - 1 && j == grid[0].length - 1) {
+            count ++;
+        }
+        grid[i][j] = -1;
+        uniquePathsWithObstacles3(grid, i + 1, j);
+        uniquePathsWithObstacles3(grid, i, j + 1);
+        grid[i][j] = 0;
     }
 
 }
