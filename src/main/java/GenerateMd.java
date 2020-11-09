@@ -19,6 +19,9 @@ public class GenerateMd {
         File[] files = dir.listFiles();
         Map<Integer, File> map = new HashMap<>();
         for (File file : files) {
+            if (file.isDirectory()) {
+                continue;
+            }
             String fileName = file.getName();
             int num = Integer.parseInt(fileName.substring(8, fileName.lastIndexOf(".")));
             map.put(num, file);
@@ -32,7 +35,7 @@ public class GenerateMd {
             String content;
             while ((content = buffer.readLine()) != null) {
                 if (content.contains(flag)) {
-                    String res = "###### [leetcode" + num + " " + content.substring(flag.length())
+                    String res = "[leetcode" + num + " " + content.substring(flag.length())
                             + "](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/"
                             + name + "/LeetCode" + num + ".java)";
                     System.out.println(res);
