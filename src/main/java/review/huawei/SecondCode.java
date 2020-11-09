@@ -1,4 +1,4 @@
-package huawei;
+package review.huawei;
 
 import java.util.Arrays;
 
