@@ -35,9 +35,21 @@ public class GenerateMd {
             String content;
             while ((content = buffer.readLine()) != null) {
                 if (content.contains(flag)) {
-                    String res = "[leetcode" + num + " " + content.substring(flag.length())
+                    String codeName;
+                    boolean starFlag = false;
+                    if (content.indexOf('★') < 0) {
+                        codeName = content.substring(flag.length());
+                    } else {
+                        starFlag = true;
+                        codeName = content.substring(flag.length(), content.length() - 2);
+                    }
+                    String res = "[leetcode" + num + " " + codeName
                             + "](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/"
                             + name + "/LeetCode" + num + ".java)";
+                    if (starFlag) {
+                        res = res + " " + "★";
+                    }
+                    res += "<br>";g
                     System.out.println(res);
                     break;
                 }
