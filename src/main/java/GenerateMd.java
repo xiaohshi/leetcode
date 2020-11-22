@@ -49,7 +49,7 @@ public class GenerateMd {
                     if (starFlag) {
                         res = res + " " + "★";
                     }
-                    res += "<br>";
+                    res += " <br/>";
                     System.out.println(res);
                     break;
                 }
