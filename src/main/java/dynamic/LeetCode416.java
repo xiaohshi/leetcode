@@ -52,9 +52,6 @@ public class LeetCode416 {
         int c = sum / 2;
         boolean[] res = new boolean[c + 1];
         res[0] = true;
-        for (int i = 1; i <= c; i ++) {
-            res[i] = nums[0] == i;
-        }
         for (int i = 1; i < n; i ++) {
             for (int j = c; j >= nums[i]; j --) {
                 res[j] = res[j] || res[j - nums[i]];

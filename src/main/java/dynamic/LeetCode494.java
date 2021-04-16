@@ -36,7 +36,7 @@ public class LeetCode494 {
         System.out.println(findTargetSumWays(nums, 3));
 
         List<String> res = new ArrayList<>();
-        findTargetSumWaysPath(res, "", nums, 0, 3, 0);
+        findTargetSumWaysPath(res, "", nums,  3, 0);
         for (String s : res) {
             System.out.println(s);
         }
@@ -67,20 +67,15 @@ public class LeetCode494 {
     }
 
     // 找出所有的结果, 利用回溯法
-    public static void findTargetSumWaysPath(List<String> res, String s, int[] nums, int ans, int S, int cur) {
+    public static void findTargetSumWaysPath(List<String> res, String s, int[] nums, int S, int cur) {
         if (cur >= nums.length) {
-            if (ans == S) {
+            if (S == 0) {
                 res.add(s);
             }
             return;
         }
-        if (cur == 0) {
-            findTargetSumWaysPath(res, s + "+" + nums[cur], nums, nums[cur], S, cur + 1);
-            findTargetSumWaysPath(res, s + "-" + nums[cur], nums, - nums[cur], S, cur + 1);
-        } else {
-            findTargetSumWaysPath(res, s + "+" + nums[cur], nums, ans + nums[cur], S, cur + 1);
-            findTargetSumWaysPath(res, s + "-" + nums[cur], nums, ans - nums[cur], S, cur + 1);
-        }
+        findTargetSumWaysPath(res, s + "+" + nums[cur], nums, S - nums[cur], cur + 1);
+        findTargetSumWaysPath(res, s + "-" + nums[cur], nums, S + nums[cur], cur + 1);
     }
 
 }

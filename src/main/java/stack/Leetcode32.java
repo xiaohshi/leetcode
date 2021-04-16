@@ -115,11 +115,4 @@ public class Leetcode32 {
         }
         return len;
     }
-
-    // 动态规划，该方法没有理解
-//    public static int longestValidParentheses4(String s) {
-//
-//    }
-
-
 }

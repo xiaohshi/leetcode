@@ -58,7 +58,7 @@ public class LeetCode322 {
         for (int i = 1; i <= amount; i ++) {
             res[i] = amount + 1;
             for (int coin : coins) {
-                if (i >= coin && res[i - coin] != Integer.MAX_VALUE) {
+                if (i >= coin) {
                     res[i] = Math.min(res[i - coin] + 1, res[i]);
                 }
             }

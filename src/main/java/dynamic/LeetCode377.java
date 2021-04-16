@@ -37,9 +37,9 @@ public class LeetCode377 {
         int[] res = new int[target + 1];
         res[0] = 1;
         for (int j = 1; j <= target; j ++) {
-            for (int i = 0; i < nums.length; i ++) {
-                if (j >= nums[i]) {
-                    res[j] += res[j - nums[i]];
+            for (int num : nums) {
+                if (j >= num) {
+                    res[j] += res[j - num];
                 }
             }
         }

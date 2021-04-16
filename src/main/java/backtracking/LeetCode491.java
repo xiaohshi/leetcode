@@ -19,33 +19,31 @@ import java.util.*;
 public class LeetCode491 {
 
     public static void main(String[] args) {
-        int[] nums = {4 ,3, 2, 1};
+        int[] nums = {4, 6, 7, 7};
         System.out.println(findSubsequences(nums));
     }
 
     public static List<List<Integer>> findSubsequences(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         boolean[] visited = new boolean[nums.length];
-        helper(res, new ArrayList<>(), visited, nums, 0);
+        helper(res, new ArrayList<>(), nums, 0);
         return res;
     }
 
-    private static void helper(List<List<Integer>> res, List<Integer> list, boolean[] visited, int[] nums, int cur) {
+    private static void helper(List<List<Integer>> res, List<Integer> list, int[] nums, int cur) {
         // 用set集合保存同一层的元素防止重复
         Set<Integer> set = new HashSet<>();
         for (int i = cur; i < nums.length; i ++) {
-            if (visited[i] || set.contains(nums[i])) {
+            if (set.contains(nums[i])) {
                 continue;
             }
             if (list.isEmpty() || nums[i] >= list.get(list.size() - 1)) {
-                visited[i] = true;
                 list.add(nums[i]);
                 set.add(nums[i]);
                 if (list.size() > 1) {
                     res.add(new ArrayList<>(list));
                 }
-                helper(res, list, visited, nums, i + 1);
-                visited[i] = false;
+                helper(res, list, nums, i + 1);
                 list.remove(list.size() - 1);
             }
         }

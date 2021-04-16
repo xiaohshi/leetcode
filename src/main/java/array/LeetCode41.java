@@ -27,7 +27,7 @@ package array;
 public class LeetCode41 {
 
     public static void main(String[] args) {
-        int[] nums = {1,1,1};
+        int[] nums = {3, 4, -1, 1};
         System.out.println(firstMissingPositive(nums));
     }
 

@@ -35,7 +35,7 @@ public class LeetCode31 {
     2、我们找到第一个最大索引是 nums[1] = 2
     3、再找到第二个最大索引是 nums[4] = 3
     4、交换，nums = [1,3,7,4,2,1];
-    5、翻转，nums = [1,3,1,2,4,7]
+    5、翻转，nums = [1,3,1,2,4,7];
     完毕!
      */
     public static void nextPermutation(int[] nums) {
@@ -50,7 +50,6 @@ public class LeetCode31 {
             reverse(nums, 0, n - 1);
             return;
         }
-        int l = -1;
         for (int i = n - 1; i > k; i --) {
             if (nums[i] > nums[k]) {
                 int temp = nums[i];
