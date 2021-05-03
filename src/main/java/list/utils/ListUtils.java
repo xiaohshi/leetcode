@@ -14,10 +14,12 @@ public class ListUtils {
     }
 
     public static void outputList(ListNode node) {
+        StringBuilder sb = new StringBuilder();
         while (node != null) {
-            System.out.println(node.val);
+            sb.append(node.val).append("->");
             node = node.next;
         }
+        System.out.println(sb.substring(0, sb.length() - 2));
     }
 
 }

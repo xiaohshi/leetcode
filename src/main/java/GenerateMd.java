@@ -28,6 +28,7 @@ public class GenerateMd {
         }
         List<Integer> nums = new ArrayList<>(map.keySet());
         Collections.sort(nums);
+        System.out.println(nums.size());
         for (int num : nums) {
             File file = map.get(num);
             String flag = num + ". ";

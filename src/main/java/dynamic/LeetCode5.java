@@ -1,7 +1,7 @@
 package dynamic;
 
 /*
-5. 最长回文子串
+5. 最长回文子串 ★
 给你一个字符串 s，找到 s 中最长的回文子串。
 
 示例 1：
@@ -34,20 +34,48 @@ public class LeetCode5 {
         System.out.println(longestPalindrome("aacabdkacaa"));
     }
 
-    // 由于回文段的特性，此题就相当于s与s的反转字符串的最长公共字符串
+    // 中心拓展法
     public static String longestPalindrome(String s) {
+        if (s == null || s.length() < 2) {
+            return s;
+        }
+        int start = 0, end = 0;
+        for (int i = 0; i < s.length(); i ++) {
+            int len1 = helper(s, i, i);
+            int len2 = helper(s, i, i + 1);
+            int len = Math.max(len1, len2);
+            if (len > end - start) {
+                start = i - (len - 1) / 2;
+                end = i + len / 2;
+            }
+        }
+        return s.substring(start, end + 1);
+    }
+
+    private static int helper(String s, int l, int r) {
+        while (l >= 0 && r < s.length() && s.charAt(l) == s.charAt(r)) {
+            l --;
+            r ++;
+        }
+        return r - l - 1;
+    }
+
+    // 由于回文段的特性，此题就相当于s与s的反转字符串的最长公共字符串
+    public static String longestPalindrome1(String s) {
         if (s == null || s.length() < 2) {
             return s;
         }
         int n = s.length(), maxLen = 0, maxEnd = 0;
         String ss = new StringBuilder(s).reverse().toString();
         int[][] res = new int[n + 1][n + 1];
-        for (int i = 1; i <= n; i ++) {
-            for (int j = 1; j <= n; j ++) {
-                if (s.charAt(i - 1) == ss.charAt(j - 1)) {
-                    res[i][j] = res[i -1][j - 1] + 1;
-                } else {
-                    res[i][j] = Math.max(res[i - 1][j], res[i][j - 1]);
+        for (int i = 0; i <= n; i ++) {
+            for (int j = 0; j <= n; j ++) {
+                if (s.charAt(i) == ss.charAt(j)) {
+                    if (i == 0 || j == 0) {
+                        res[i][j] = 1;
+                    } else {
+                        res[i][j] = res[i -1][j - 1] + 1;
+                    }
                 }
                 if (res[i][j] > maxLen) {
                     int beforeRev = n - 1 - j;

@@ -24,19 +24,14 @@ public class LeetCode485 {
             return 0;
         }
         int max = 0, count = 0;
-        for (int i = 0; i < nums.length - 1; i ++) {
+        for (int i = 0; i < nums.length; i ++) {
             if (nums[i] == 1) {
                 count ++;
-                if (nums[i + 1] != 1) {
-                    max = Math.max(max, count);
-                    count = 0;
-                }
+            } else {
+                max = Math.max(max, count);
+                count = 0;
             }
         }
-        if (nums[nums.length - 1] == 1) {
-            count ++;
-            max = Math.max(max, count);
-        }
-        return max;
+        return Math.max(max, count);
     }
 }
