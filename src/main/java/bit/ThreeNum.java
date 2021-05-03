@@ -13,10 +13,7 @@ public class ThreeNum {
         for (int num : nums) {
             int j = 0;
             while (num != 0) {
-                if (num % 2 != 0) {
-                    res[j] ++;
-                }
-                j ++;
+                res[j ++] += num % 2;
                 num = num / 2;
             }
         }
