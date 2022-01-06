@@ -128,3 +128,8 @@
 ### 二分法（2）
 [leetcode34 在排序数组中查找元素的第一个和最后一个位置](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/binary_search/LeetCode34.java) ★ <br/>
 [leetcode154 旋转数组的最小数字](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/binary_search/LeetCode154.java) ★ <br/>
+
+### 堆栈（2）
+[leetcode32 最长有效括号](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/stack/LeetCode32.java) ★ <br/>
+[leetcode71 简化路径](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/stack/LeetCode71.java) ★ <br/>
+[leetcode739 每日温度](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/stack/LeetCode739.java) <br/>

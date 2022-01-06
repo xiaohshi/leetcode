@@ -1,7 +1,5 @@
 package array;
 
-import sun.rmi.runtime.Log;
-
 /*
 414.第三大数
 
