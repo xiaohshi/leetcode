@@ -84,6 +84,7 @@
 [leetcode416 分割等和子集](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode416.java) <br/>
 [leetcode494 目标和](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode494.java) <br/>
 [leetcode518 零钱兑换 II](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode518.java) <br/>
+[leetcode978 最长湍流子数组](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode978.java) <br/>
 [leetcode1143 最长公共子序列](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode1143.java) <br/>
 
 ### 链表（9）
@@ -133,3 +134,6 @@
 [leetcode32 最长有效括号](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/stack/LeetCode32.java) ★ <br/>
 [leetcode71 简化路径](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/stack/LeetCode71.java) ★ <br/>
 [leetcode739 每日温度](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/stack/LeetCode739.java) <br/>
+
+### 位运算（2）
+[leetcode89 格雷编码](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/bit/LeetCode89.java) ★ <br/>
