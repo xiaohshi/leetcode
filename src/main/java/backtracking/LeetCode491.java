@@ -25,7 +25,6 @@ public class LeetCode491 {
 
     public static List<List<Integer>> findSubsequences(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
-        boolean[] visited = new boolean[nums.length];
         helper(res, new ArrayList<>(), nums, 0);
         return res;
     }
