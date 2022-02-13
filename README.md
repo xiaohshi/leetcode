@@ -12,6 +12,8 @@
 [leetcode41 缺失的第一个正数](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode41.java) ★ <br/>
 [leetcode54 螺旋矩阵](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode54.java) <br/>
 [leetcode59 螺旋矩阵 II](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode59.java) <br/>
+[leetcode60 排列序列](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode60.java) ★ <br/>
+[leetcode80 删除有序数组中的重复项 II](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode80.java) <br/>
 [leetcode128 最长连续序列](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode128.java) ★ <br/>
 [leetcode238 除自身以外数组的乘积](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode238.java) ★ <br/>
 [leetcode283 移动零](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode283.java) <br/>
@@ -25,7 +27,9 @@
 
 ### 字符串
 [leetcode3 无重复字符的最长子串](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode3.java) ★ <br/>
+[leetcode8 字符串转换整数](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode8.java) ★ <br/>
 [leetcode14 最长公共前缀](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode14.java) <br/>
+[leetcode30 串联所有单词的子串](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode30.java) ★ <br/>
 [leetcode43 字符串相乘](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode43.java) <br/>
 [leetcode49 字母异位词分组](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode49.java) ★ <br/>
 [leetcode151 翻转字符串里的单词](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode151.java) <br/>
@@ -85,6 +89,7 @@
 [leetcode416 分割等和子集](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode416.java) <br/>
 [leetcode494 目标和](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode494.java) <br/>
 [leetcode518 零钱兑换 II](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode518.java) <br/>
+[leetcode740 删除并获得点数](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode740.java) <br/>
 [leetcode1143 最长公共子序列](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode1143.java) <br/>
 
 ### 链表
