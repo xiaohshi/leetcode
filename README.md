@@ -8,6 +8,7 @@
 ### 数组
 [leetcode4 寻找两个正序数组的中位数](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode4.java) ★ <br/>
 [leetcode15 三数之和](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode15.java) <br/>
+[leetcode29 两数相除](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode29.java) <br/>
 [leetcode31 下一个排列](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode31.java) ★ <br/>
 [leetcode41 缺失的第一个正数](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode41.java) ★ <br/>
 [leetcode54 螺旋矩阵](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode54.java) <br/>
@@ -18,6 +19,7 @@
 [leetcode238 除自身以外数组的乘积](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode238.java) ★ <br/>
 [leetcode283 移动零](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode283.java) <br/>
 [leetcode304 二维区域和检索 - 矩阵不可变](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode304.java) <br/>
+[leetcode373 查找和最小的 K 对数字](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode373.java) <br/>
 [leetcode442 数组中重复的数据](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode442.java) ★ <br/>
 [leetcode448 找到所有数组中消失的数字](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode448.java) ★ <br/>
 [leetcode485 最大连续1的个数](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/array/LeetCode485.java) <br/>
@@ -27,9 +29,10 @@
 
 ### 字符串
 [leetcode3 无重复字符的最长子串](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode3.java) ★ <br/>
-[leetcode8 字符串转换整数](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode8.java) ★ <br/>
+[leetcode6 Z 字形变换](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode6.java) <br/>
+[leetcode8 字符串转换整数 (atoi)](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode8.java) <br/>
 [leetcode14 最长公共前缀](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode14.java) <br/>
-[leetcode30 串联所有单词的子串](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode30.java) ★ <br/>
+[leetcode30 串联所有单词的子串](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode30.java) <br/>
 [leetcode43 字符串相乘](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode43.java) <br/>
 [leetcode49 字母异位词分组](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode49.java) ★ <br/>
 [leetcode151 翻转字符串里的单词](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode151.java) <br/>
@@ -38,9 +41,12 @@
 [leetcode394 字符串解码](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode394.java) ★ <br/>
 [leetcode438 找到字符串中所有字母异位词](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode438.java) ★ <br/>
 [leetcode451 根据字符出现频率排序](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode451.java) <br/>
+[leetcode537 复数乘法](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode537.java) <br/>
 [leetcode551 学生出勤记录 I](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode551.java) <br/>
 [leetcode657 机器人能否返回原点](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode657.java) <br/>
 [leetcode696 计数二进制子串](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode696.java) <br/>
+[leetcode838 推多米诺](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode838.java) <br/>
+[leetcode2055 蜡烛之间的盘子](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/string/LeetCode2055.java) <br/>
 
 ### 回溯法 ★
 [leetcode17 电话号码的字母组合](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/backtracking/LeetCode17.java) <br/>
@@ -60,13 +66,16 @@
 [leetcode241 为运算表达式设计优先级](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/backtracking/LeetCode241.java) <br/>
 [leetcode257 二叉树的所有路径](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/backtracking/LeetCode257.java) <br/>
 [leetcode282 给表达式添加运算符](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/backtracking/LeetCode282.java) <br/>
+[leetcode306 累加数](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/backtracking/LeetCode306.java) <br/>
 [leetcode491 递增子序列](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/backtracking/LeetCode491.java) <br/>
 [leetcode526 优美的排列](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/backtracking/LeetCode526.java) <br/>
+[leetcode576 出界的路径数](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/backtracking/LeetCode576.java) <br/>
 [leetcode980 不同路径 III](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/backtracking/LeetCode980.java) <br/>
 [leetcode1219 黄金矿工](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/backtracking/LeetCode1219.java) <br/>
 
 ### 动态规划 ★
 [leetcode5 最长回文子串](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode5.java) ★ <br/>
+[leetcode10 正则表达式匹配](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode10.java) <br/>
 [leetcode45 跳跃游戏 II](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode45.java) <br/>
 [leetcode55 跳跃游戏](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode55.java) <br/>
 [leetcode62 不同路径](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode62.java) <br/>
@@ -89,8 +98,13 @@
 [leetcode416 分割等和子集](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode416.java) <br/>
 [leetcode494 目标和](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode494.java) <br/>
 [leetcode518 零钱兑换 II](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode518.java) <br/>
+[leetcode650 只有两个键的键盘](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode650.java) <br/>
+[leetcode688 骑士在棋盘上的概率](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode688.java) <br/>
 [leetcode740 删除并获得点数](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode740.java) <br/>
+[leetcode978 最长湍流子数组](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode978.java) <br/>
 [leetcode1143 最长公共子序列](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode1143.java) <br/>
+[leetcode1994 好子集的数目](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode1994.java) <br/>
+[leetcode2100 适合打劫银行的日子](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/dynamic/LeetCode2100.java) <br/>
 
 ### 链表
 [leetcode2 两数相加](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/list/LeetCode2.java) ★ <br/>
@@ -135,10 +149,11 @@
 [leetcode34 在排序数组中查找元素的第一个和最后一个位置](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/binary_search/LeetCode34.java) ★ <br/>
 [leetcode154 旋转数组的最小数字](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/binary_search/LeetCode154.java) ★ <br/>
 
-### 堆栈
+### 集合
 [leetcode32 最长有效括号](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/stack/LeetCode32.java) ★ <br/>
 [leetcode71 简化路径](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/stack/LeetCode71.java) ★ <br/>
 [leetcode739 每日温度](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/stack/LeetCode739.java) <br/>
+[leetcode2104 子数组范围和](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/stack/LeetCode2104.java) ★ <br/>
 
 ### 贪心算法
 [leetcode1405 最长快乐字符串](https://github.com/xiaohshi/leetcode/blob/master/src/main/java/greed/LeetCode1405.java) <br/>
